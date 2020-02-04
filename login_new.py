@@ -3,11 +3,11 @@ from selenium import webdriver
 #from selenium.webdriver.common.keys import Keys
 
 class login_automationpractice(unittest.TestCase):
-    
+
     def setUp (self):
         self.browser = webdriver.Chrome()
     
-    def login_ap (self):
+    def test_login_ap (self):
         browser = self.browser
         browser.get("http://automationpractice.com/index.php")
         self.assertIn("My Store", browser.title)
@@ -23,4 +23,3 @@ class login_automationpractice(unittest.TestCase):
     
 if __name__ == "__main__":
     unittest.main()
-    
