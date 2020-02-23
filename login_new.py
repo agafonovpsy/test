@@ -5,7 +5,7 @@ from selenium import webdriver
 class login_automationpractice(unittest.TestCase):
 
     def setUp (self):
-        self.browser = webdriver.Chrome()
+        self.browser = webdriver.Chrome("/home/geoaga/Projects/test_login/chromedriver")
     
     def test_login_ap (self):
         browser = self.browser
